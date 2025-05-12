@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مدیریت هزینه‌ها</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<Style>
+  body {
+  font-family: 'Vazir', sans-serif;
+}
+</Style>
+<body dir="rtl" class="bg-gray-900 text-white p-4">
+
+  <div class="max-w-xl mx-auto space-y-4 ">
+    <h1 class="text-xl font-bold text-center text-green-500">اپلیکیشن مدیریت هزینه</h1>
+
+    <!-- فرم ثبت هزینه -->
+    <div class="bg-gray-800 p-4 rounded-xl space-y-3 border border-green-400">
+      <input id="desc" class="w-full p-2 rounded bg-gray-700" placeholder="توضیح هزینه" />
+      <input id="amount" type="number" class="w-full p-2 rounded bg-gray-700" placeholder="مبلغ (تومان)" />
+      <input id="category" class="w-full p-2 rounded bg-gray-700" placeholder="دسته‌بندی (مثلاً خوراک)" />
+      <button onclick="addExpense()" class="w-full bg-green-500 hover:bg-green-600 p-2 rounded">ثبت هزینه</button>
+    </div>
+
+    <!-- نمایش هزینه‌ها -->
+    <div id="expenseContainer" class="space-y-6 rounded-xl border border-green-400"></div>
+
+    <!-- مجموع کل -->
+    <div class="bg-gray-800 p-3 rounded-xl text-center font-bold border border-green-400">
+      <span id="total">مجموع: ۰ تومان</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+                                <!--    src : https://github.com/im-mahan -->
